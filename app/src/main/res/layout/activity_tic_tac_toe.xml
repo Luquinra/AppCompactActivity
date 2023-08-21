@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicTacToeActivity">
+
+    <TextView
+        android:id="@+id/textPlayerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_one_x"
+        android:textColor="@color/material_dynamic_primary50"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Row 1 -->
+    <Button
+        android:id="@+id/button00"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/textPlayerOne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button01"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+
+    <Button
+        android:id="@+id/button01"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/textPlayerOne"
+        app:layout_constraintStart_toEndOf="@+id/button00"
+        app:layout_constraintEnd_toStartOf="@+id/button02"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+         />
+
+    <Button
+        android:id="@+id/button02"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/textPlayerOne"
+        app:layout_constraintStart_toEndOf="@+id/button01"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Row 2 -->
+    <!-- Similar layout as Row 1, adjust constraints accordingly -->
+    <Button
+        android:id="@+id/button03"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/button00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button04"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+
+    <Button
+        android:id="@+id/button04"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/button01"
+        app:layout_constraintStart_toEndOf="@+id/button03"
+        app:layout_constraintEnd_toStartOf="@+id/button05"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+
+    <Button
+        android:id="@+id/button05"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/button02"
+        app:layout_constraintStart_toEndOf="@+id/button04"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+    <!-- Row 3 -->
+    <!-- Similar layout as Row 1, adjust constraints accordingly -->
+    <Button
+        android:id="@+id/button06"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/button03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button07"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+
+    <Button
+        android:id="@+id/button07"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/button04"
+        app:layout_constraintStart_toEndOf="@+id/button06"
+        app:layout_constraintEnd_toStartOf="@+id/button08"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+
+    <Button
+        android:id="@+id/button08"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/button05"
+        app:layout_constraintStart_toEndOf="@+id/button07"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/textPlayerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_two_o"
+        android:textSize="30sp"
+        android:textColor="@color/material_dynamic_primary50"
+        app:layout_constraintTop_toBottomOf="@+id/button07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/newGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_game"
+        app:layout_constraintTop_toBottomOf="@+id/textPlayerTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
