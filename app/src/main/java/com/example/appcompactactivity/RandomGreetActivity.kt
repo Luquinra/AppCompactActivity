@@ -33,18 +33,19 @@ class RandomGreetActivity : AppCompatActivity() {
             "Spanish" -> R.drawable.espa_a
             "French" -> R.drawable.francia
             "German" -> R.drawable.alemania
+            "Portuguese" -> R.drawable.brasil
             else -> R.drawable.ping
         }
     }
 
     private fun getGreetingForLanguage(language: String?): String {
-        // Implementa la lógica para obtener el saludo según el idioma
         return when (language) {
             "English" -> "Hello!"
             "Spanish" -> "¡Hola!"
             "French" -> "Bonjour !"
             "German" -> "Hallo!"
-            else -> "Hello!" // Valor predeterminado en caso de idioma desconocido
+            "Portuguese" -> "Olá!"
+            else -> "Hello!" // Valor predeterminado
         }
     }
 }

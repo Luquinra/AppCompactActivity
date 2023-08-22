@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupSpinner() {
         spinnerGreeting = findViewById(R.id.spinner)
 
-        val languages = listOf("English", "Spanish", "French", "German") // Aquí proporciona la lista de idiomas
+        val languages = listOf("English", "Spanish", "French", "German", "Portuguese") // Aquí proporciona la lista de idiomas
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, languages)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
