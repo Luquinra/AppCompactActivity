@@ -1,4 +1,4 @@
-package com.example.appcompactactivity
+package model
 
 import java.io.Serializable
 

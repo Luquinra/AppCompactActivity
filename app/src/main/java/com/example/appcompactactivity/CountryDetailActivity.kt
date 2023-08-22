@@ -3,8 +3,7 @@ package com.example.appcompactactivity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.appcompactactivity.databinding.ActivityCountryDetailBinding
-import org.json.JSONArray
-import org.json.JSONObject
+import model.CountryInfo
 
 class CountryDetailActivity : AppCompatActivity() {
 
