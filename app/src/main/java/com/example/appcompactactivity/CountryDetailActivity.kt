@@ -22,7 +22,18 @@ class CountryDetailActivity : AppCompatActivity() {
             binding.capitalTextView.text = countryInfo.capital
             binding.nameIntTextView.text = countryInfo.nombre_pais_int
             binding.siglaTextView.text = countryInfo.sigla
+
+            loadFlagImage(countryInfo.sigla)
         } else {
+        }
+    }
+
+    private fun loadFlagImage(sigla: String) {
+        val flaResource = resources.getIdentifier("flag_${sigla.lowercase()}", "drawable", packageName)
+        if (flaResource != 0) {
+            binding.flagImageView.setImageResource(flaResource)
+        } else {
+
         }
     }
 }
